@@ -3,9 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lorénzo sajt</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Lorénzo Somí</title>
 
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+           $.ajax({
+              url:'https://dailyverses.net/get/verse?language=niv&isdirect=1&url=' + window.location.hostname,
+              dataType: 'JSONP',
+              success:function(json){
+                 $(".dailyVersesWrapper").prepend(json.html);
+              }
+           });
+        });
+     </script>
     </head>
 <body>
     <header>
@@ -13,10 +25,10 @@
     </header>
     <nav>
         <a href="om-mig.html">Om mig</a>
-        <a href="javascript-exempel.html"> Introduction to java script </a>
+        <a href="javascript-exempel.html"> java-script </a>
     </nav>
     <main>
-        <h2>Mina sidor</h2>
+        <div class="dailyVersesWrapper"></div>
         <p>
             
         </p>
