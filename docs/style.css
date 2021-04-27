@@ -1,16 +1,16 @@
 body {
     /* Typography Declarations */
-    color: #222222;
+    color: #F0FFFF	;
     font-size: 1em;
     font-family: "Open Sans", "Helvetica Neue", sans-serif;
 	/* */
-	background:#B3B3B3;
+	background:#00CED1;
 	font-size: 125%;
 
 }
 
 header{
-	background: #666666;
+	background: #191970;
 	text-align: center;
 }
 
@@ -25,8 +25,8 @@ nav{
 }
 
 h2{
-	color: #666666;
-	background: #00b7ea;
+	color: #191970;
+	background: #48D1CC;
 }
 
 
@@ -40,7 +40,7 @@ details{
 
 
 footer{
-	background: #666666
+	background: #191970
 }
 
 #grad {
