@@ -42,3 +42,11 @@ details{
 footer{
 	background: #666666
 }
+
+#grad {
+    width: 600px;
+    height: 600px;
+    background: blue; /* In case a browser doesn't support gradients */
+    background: linear-gradient(to left, #ff5e7c, #c272d4, #718ced, #02aab0, #00cdac); /* Standard syntax */
+    background: -webkit-linear-gradient(to left, #ff5e7c, #c272d4, #718ced, #02aab0, #00cdac); /* Safari */
+   }
